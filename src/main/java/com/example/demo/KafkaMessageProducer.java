@@ -23,7 +23,7 @@ public class KafkaMessageProducer {
 
         // Send messages to Kafka topic
         try {
-            for (int i = 0; i < 10; i++) {
+            for (int i = 11; i < 21; i++) {
                 String message = "Test message #" + i;
                 ProducerRecord<String, String> record = new ProducerRecord<>(topicName, message);
                 producer.send(record);
